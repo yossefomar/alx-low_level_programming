@@ -2,17 +2,19 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main function -starter function
- * find the last digit and segment it if 0 or not
- * Return: (0) succsess
+ * main - Entry point
+ *
+ * Description: prints the last digit of a random number
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
 
+	int lastDigit;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int lastDigit;
 
 	lastDigit = n % 10;
 
