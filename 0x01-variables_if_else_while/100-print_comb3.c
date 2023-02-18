@@ -9,26 +9,19 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 0 ; i <= 8 ; i++)
+	for (j = 0; j <= 8; ++j)
 	{
-		for (j = 1 ; j <= 9 ; j++)
+		for (i = j + 1; i <= 9; ++i)
 		{
-			putchar('0' + i);
 			putchar('0' + j);
-			if (i == 9 && j == 9)
-			{
-				putchar('\n');
-			}
-			else if (i == j)
-			{
-				continue;
-			}
-			else if (i < 9 || j < 8)
+			putchar('0' + i);
+			if (i < 9 || j < 8)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
