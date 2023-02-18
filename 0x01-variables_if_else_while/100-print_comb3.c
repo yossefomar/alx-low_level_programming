@@ -9,9 +9,9 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 0 ; i < 8 ; i++)
+	for (i = 0 ; i <= 8 ; i++)
 	{
-		for (j = 1 ; j < 9 ; j++)
+		for (j = 1 ; j <= 9 ; j++)
 		{
 			putchar('0' + i);
 			putchar('0' + j);
@@ -19,7 +19,11 @@ int main(void)
 			{
 				putchar('\n');
 			}
-			else if (i < 8)
+			else if (i == j)
+			{
+				continue;
+			}
+			else if (i < 9 || j < 8)
 			{
 				putchar(',');
 				putchar(' ');
