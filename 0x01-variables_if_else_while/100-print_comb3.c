@@ -13,14 +13,16 @@ int main(void)
 	{
 		for (j = 0 ; j < 9 ; j++)
 		{
-			printf("%d%d", j, i);
+			putchar('0' + j);
+			putchar('0' + i);
 			if (i == 9 && j == 9)
 			{
-				printf("\n");
+				putchar('\n');
 			}
 			else
 			{
-				printf(", ");
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
