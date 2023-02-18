@@ -23,4 +23,6 @@ int main(void)
 	printf("Last digit of %d",n,"is %d",lastDigit,"and is less than 6 and not 0");
 	}
 	return (0);
+
 }
+
