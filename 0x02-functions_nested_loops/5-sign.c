@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * main - Entry point
- *print sign of number
- * Return: Always 0 (Success)
+ * print_sign - print the sign of the number
+ *
+ * @n: integer number
+ *
+ * Return: 1 -> postive | 0 -> zero | -1 -> negative
  */
-int main(void)
-{
 	int print_sign(int n)
 	{
 		if (n > 0)
@@ -24,4 +24,3 @@ int main(void)
 			return (-1);
 		}
 	}
-}
