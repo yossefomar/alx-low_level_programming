@@ -1,20 +1,17 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
  * main - Entry point
- *print numbers
+ *print call put char function
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
+	char message[] = "_putchar\n";
+	int i;
+
+	for (i = 0; i < 9; i++)
+	{
+		_putchar(message[i]);
+	}
 	return (0);
 }
