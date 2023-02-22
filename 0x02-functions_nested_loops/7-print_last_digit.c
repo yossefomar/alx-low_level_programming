@@ -2,12 +2,12 @@
 /**
  * print_last_digit - return last digit
  *
- * @r: integer value
+ * @n: integer value
  *
  * Return: the last digit of the integer
  */
 
-int print_last_digit(int r)
+int print_last_digit(int n)
 {
 
 	int remainder;
