@@ -1,17 +1,20 @@
 #include "main.h"
 /**
- * main - Entry point
- *print call put char function
- * Return: Always 0 (Success)
+ * print_alphabet_x10 - print the alphabet 10 times
+ *
+ * Return: Nothing
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	char message[] = "_putchar\n";
 	int i;
 
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 10; i++)
 	{
-		_putchar(message[i]);
+		char j;
+
+		for (j = 'a'; j <= 'z'; j++)
+			_putchar(j);
+		_putchar('\n');
 	}
-	return (0);
 }
+
