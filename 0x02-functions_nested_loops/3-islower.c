@@ -1,16 +1,14 @@
 #include "main.h"
 /**
- * main - Entry point
- *print call put char function
- * Return: Always 0 (Success)
+ * _islower - check it's a lower case char or not
+ *
+ * @c: is a parameter that contains the ASCII code of the char
+ * Return: 0 -> lower case | 1 -> otherwise
  */
-int main(void)
+int _islower(int c)
 {
-	int _islower(int c)
-	{
-		if (c >= 'a' && c <= 'z')
-			return (1);
-		else
-			return (0);
-	}
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 }
