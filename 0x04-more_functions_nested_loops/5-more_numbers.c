@@ -1,26 +1,16 @@
 #include "main.h"
-/**
- * more_numbers - print the alphabet 10 times
- *
- * Return: Nothing
- */
 
-void more_numbers(void)
+/**
+ * print_most_numbers - prints the numbers 0-9 except 2 and 4
+ */
+void print_most_numbers(void)
 {
-	int i, j;
-	for (i = 0; i < 10; i++)
-	{
-		for (j = 0; j < 15; j++)
-		{
-			char c = j + '0';
-			if (j > 9)
-			{
-				c = (j % 10) + '0';
-				_putchar('1');
-			}
-			_putchar(c);
-		}
-		_putchar('\n');
-	}
-	return (0);
+int num;
+
+for (num = 0; num <= 9; num++)
+{
+if (num != 2 && num != 4)
+_putchar(num + '0');
+}
+_putchar('\n');
 }
