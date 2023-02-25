@@ -1,24 +1,28 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - causes an infinite loop
- * Return: 0
- */
+* main - takes a date and prints how many days are left in the year, taking
+* leap years into account
+* Return: 0
+*/
 
 int main(void)
 {
-int i;
+    int month;
+    int day;
+    int year;
 
-printf("Infinite loop incoming :(\n");
+    month = 4;
+    day = 01;
+    year = 1997;
 
-i = 0;
-/*
-* while (i < 10)
-* {
-* putchar(i);
-* }
-*/
-printf("Infinite loop avoided! \\o/\n");
+    printf("Date: %02d/%02d/%04d\n", month, day, year);
 
-return (0);
+    day = convert_day(month, day);
+
+    print_remaining_days(month, day, year);
+
+    return (0);
 }
+
