@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * puts2 - print char and remove char of str
  *
@@ -10,12 +11,13 @@
 
 void puts2(char *str)
 {
-	int i=0;
+	int i;
 
-	while (str[i] != '\0')
+	int len = strlen(str);
+
+	for (i = 0 ; i < len ; i += 2)
 	{
 		putchar(str[i]);
-		i += 2;
 	}
 	putchar('\n');
 }
