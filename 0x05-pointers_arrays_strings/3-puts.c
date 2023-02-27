@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *
  * _puts - that print gavin str by put
  *
  * @str: gavin str
