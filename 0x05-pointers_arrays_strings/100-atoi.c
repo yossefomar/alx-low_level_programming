@@ -12,10 +12,6 @@ int _atoi(char *s)
 {
 	int num;
 
-	while (*s < '0' || *s > '9')
-	{
-		s++;
-	}
 	num = atoi(s);
 	return (num);
 }
