@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 #include <string.h>
 /**
  * *string_toupper - change all lower case to upper case
@@ -10,15 +9,15 @@
  */
 char *string_toupper(char *str)
 {
-	char *result = malloc(strlen(str) + 1);
+	int n, i;
 
-	int i = 0;
-
-
-	while (str[i] != '\0')
+	n = strlen(str);
+	for (i = 0; i < n; i++)
 	{
-		result[i] = toupper(str[i]);
-		i++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] = str[i] - 32;
+		}
 	}
-	result[i] = '\0';
-	return (result);
+	return (str);
+}
