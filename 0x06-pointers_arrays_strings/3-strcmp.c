@@ -1,16 +1,15 @@
-#include "main.h"
-#include <stdio.h>
 #include <string.h>
+#include "main.h"
 /**
- * _strcmp - function concat with some conds.
+ * _strcmp - compare two strings
  *
- * @s1: first str
+ * @s1: first string
  *
- * @s1: second str
+ * @s2: second string
  *
- * Return: ans-> str after concat
+ * Return: ressult
  */
 int _strcmp(char *s1, char *s2)
 {
-	return (strcmp(dest, src));
+	return (strcmp(s1, s2));
 }
