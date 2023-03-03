@@ -9,18 +9,24 @@
  */
 char *leet(char *str)
 {
-	int n, i;
+	char *ptr = str;
+	char letters[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	char numbers[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	int i, j;
 
-	n = strlen(str);
-	for (i = 0 ; i < n; i++)
+	while (*ptr != '\0')
 	{
-		char *s = "OL/EA//T";
-
-		int j;
-
-		for (j = 0 ; j < 8; j++)
-			if (s[j] == str[i] || s[j] == (s[i] + 32))
-				str[i] = j;
+		i = 0;
+		while (i < 10)
+		{
+			if (*ptr == letters[i])
+			{
+				*ptr = numbers[i];
+				break;
+			}
+			i++;
+		}
+		ptr++;
 	}
 	return (str);
 }
