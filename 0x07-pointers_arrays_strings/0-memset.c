@@ -3,13 +3,15 @@
 /**
  * _memset - fill memory firtst n bytes by s pointed by p
  *
- * @b: the constant will filled 
+ * @b: the constant will filled
  *
  * @s: pointer of b
  *
- * @m: number of bits will be used
+ * @n: number of bits will be used
+ *
+ * Return: s
  */
-char* memset(char* s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	for (unsigned int i = 0; i < n; i++)
 	{
@@ -17,4 +19,3 @@ char* memset(char* s, char b, unsigned int n)
 	}
 	return (s);
 }
-
