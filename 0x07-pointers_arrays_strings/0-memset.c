@@ -11,6 +11,10 @@
  */
 char* memset(char* s, char b, unsigned int n)
 {
-	return ((char*) memset(s, (int) b, (size_t) n));
+	for (unsigned int i = 0; i < n; i++)
+	{
+		*(s + i) = b;
+	}
+	return (s);
 }
 
