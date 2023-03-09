@@ -3,7 +3,7 @@
 /**
  * _puts_recursion - function print string
  *
- * @s: string we will print 
+ * @s: string we will print
  *
  * Return: Success (0)
  */
