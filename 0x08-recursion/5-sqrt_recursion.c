@@ -7,23 +7,21 @@
  */
 int _sqrt_recursion(int n)
 {
-    return _sqrt_helper(n, n/2);
-}
-
-/**
- * _sqrt_helper - recursive helper function to find square root
- * @n: the number to find the square root of
- * @g: the guess for the square root
- *
- * Return: the natural square root of n, or -1 if n does not have a natural square root
- */
-int _sqrt_helper(int n, int g)
-{
-    if (g*g == n)
-        return g;
-    else if (g*g < n)
-        return _sqrt_helper(n, (g + n/g)/2);
-    else
+    if (n < 0) {
         return -1;
+    }
+    else if (n == 0 || n == 1) {
+        return n;
+    }
+    else {
+        int i;
+        for (i = 1; i * i < n; i++);
+        if (i * i == n) {
+            return i;
+        }
+        else {
+            return -1;
+        }
+    }
 }
 
